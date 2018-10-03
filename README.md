@@ -1,3 +1,3 @@
 # TutOverflow
 
-Project for Database and Web course.
+Do have a look at the Tasks Checklist in the Issues tab.
