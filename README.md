@@ -1,2 +1,3 @@
-# DBW_Project
+# TutOverflow
+
 Project for Database and Web course.
