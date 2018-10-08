@@ -1,4 +1,4 @@
-This is just a basic strucutre of how the tables should look, feel free to review, suggest, delete update the structure.
+This is just a basic structure of how the project tables should look like, feel free to review, suggest, delete, update the structure.
 
 ## User Example Table:
 
