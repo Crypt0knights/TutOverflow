@@ -1,3 +1,5 @@
+This is just a basic strucutre of how the tables should look, feel free to review, suggest, delete update the structure.
+
 ## User Example Table:
 
 | index | fname | lname | email         | phone no | profile      |
