@@ -2,7 +2,7 @@
 
 Do have a look at the Tasks Checklist in the Issues tab.
 
-Resource List
+## RESOURCE LIST:
 
 1. this tutorial consists of more of the required knowledge we need to have while working with MYSQL Connectivity with PHP.
 - [Derek Banas - PHP with MySQL](https://www.youtube.com/watch?v=l21g8dJmD7U&list=PL21E20F9A122DC853)
@@ -17,3 +17,11 @@ Resource List
  - [PHP Poll System](https://www.youtube.com/playlist?list=PLfdtiltiRHWEdQ2Wzp8cOdz4Q0rNPuE3G)
 
 5. Link Voting Mechanism  - please add a suitable video series/  blog/ github link for the same.
+
+## Possible Front-end Resources:
+
+* https://ritwik12.github.io/Prototype-For-Hackr.io/
+* https://blackrockdigital.github.io/startbootstrap-landing-page/#
+* https://codepen.io/ibrascript/pen/RxgGpW
+* Bootstap Buttons and Cards https://codepen.io/lawrencepa1988/pen/ooqeer
+
