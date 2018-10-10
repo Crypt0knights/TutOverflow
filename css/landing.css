@@ -1,0 +1,61 @@
+@import "compass/css3";
+
+.flex-container {
+  padding: 1;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  transition: all 0.1s linear;
+}
+
+.flex-item {
+  min-height: 75px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-bottom: 17px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  width: 32%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+}
+
+.topic-icon {
+  margin-right: 15px;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+
+#header {
+  font-family: "Lato", sans-serif;
+}
+
+#header2 {
+  margin-top: 50px;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  color: Peru ;
+}
+
+.tutorials-section{
+  background-image: url('img/land2.jpg');
+}
