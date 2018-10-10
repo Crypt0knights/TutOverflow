@@ -19,6 +19,8 @@
 
 5. Link Voting Mechanism  - please add a suitable video series/  blog/ github link for the same.
 
+6. SQL Cheatsheet - https://github.com/enochtangg/quick-SQL-cheatsheet
+
 ## Possible Front-end Resources:
 
 * https://ritwik12.github.io/Prototype-For-Hackr.io/
