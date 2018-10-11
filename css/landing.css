@@ -11,7 +11,6 @@
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  transition: all 0.1s linear;
 }
 
 .flex-item {
@@ -25,17 +24,16 @@
   background-color: #fff;
   margin-bottom: 17px;
   border-radius: 6px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s linear;
-  transition-property: all;
-  transition-duration: 0.1s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+  transition: width 2s;
   width: 32%;
   margin-left: 0.5%;
   margin-right: 0.5%;
   font-family: "Lato", sans-serif;
   font-size: 1.25em;
+}
+
+.flex-item:hover{
+  border-radius: 34px;
 }
 
 .topic-icon {
