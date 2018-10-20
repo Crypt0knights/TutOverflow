@@ -34,4 +34,4 @@
 * https://github.com/anuragphadnis/HackrIntern
 
 #### ER model
-[hit me up](shorturl.at/lx048)
+[hit me up](https://tinyurl.com/ybxly6um)
