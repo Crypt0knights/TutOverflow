@@ -11,25 +11,29 @@
 .container {
 	display: flex;
 	padding-top: 100px;
+	
 }
 
 .section_content {
-font-family: serif;
+font-family: sans-serif;
 letter-spacing: .01rem;
 font-weight: 400;
 font-style: normal;
-font-size: 21px;
+font-size: 18px;
 line-height: 1.58;
-letter-spacing: -.003px;
+letter-spacing: -.003em;
+margin-left: 300px;
+margin-right: 300px;
+max-width: 1300px;
 }
 .author {
 	font-family: sans-serif,monospace !important;
 	font-weight: 500;
 	font-size: 20px;
 	font-style: normal;
-	margin-top: 49px;
+	margin-top: 55px;
 	line-height: 0px;
-	color:	rgba(0,0,0,0.75);
+	color:	rgba(0,0,0,0.7);
 }
 
 .date {
@@ -37,6 +41,6 @@ letter-spacing: -.003px;
 	font-weight: lighter;
 	font-size: 16px;
 	font-style: normal;
-	color: rgba(0,0,0,0.4);
+	color: #586069;
 
 }

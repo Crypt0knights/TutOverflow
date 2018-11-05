@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="refresh" content="120">
+	<meta http-equiv="refresh" content="500">
 	<title>Blog</title>
 	<link rel="stylesheet" type="text/css" href="display.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -10,9 +10,9 @@
 <?php
 $c=mysqli_connect('localhost','root','','blogs');
 if($c){
-	$q="select * from `blog`";
-	$r=mysqli_query($c,$q);
-	while($data=mysqli_fetch_assoc($r)){
+	$q="select * from `blog` order by blog_id desc";
+	$r=mysqli_query($c,$q); 
+	while($data=mysqli_fetch_array($r)){
 		echo "<div class='container'>";
 			
 
@@ -30,12 +30,12 @@ if($c){
 				echo "</div>";
 
 		echo "</div>";
-
-				echo "<div class='container section_content'>";
-					echo $data['content'];
+# for printing the content
+				echo "<div class='container1 section_content'>";
+					echo htmlspecialchars_decode(stripcslashes($data['content']));
 				echo "</div>";
          		
-
+		echo "<br><br>"; 
 	}
 }
 
