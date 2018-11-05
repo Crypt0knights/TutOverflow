@@ -1,0 +1,42 @@
+.title {
+	font-family: serif;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 66px;
+    color: rgba(0,0,0,.84);
+    line-height: 64px;
+    letter-spacing: 0;
+}
+
+.container {
+	display: flex;
+	padding-top: 100px;
+}
+
+.section_content {
+font-family: serif;
+letter-spacing: .01rem;
+font-weight: 400;
+font-style: normal;
+font-size: 21px;
+line-height: 1.58;
+letter-spacing: -.003px;
+}
+.author {
+	font-family: sans-serif,monospace !important;
+	font-weight: 500;
+	font-size: 20px;
+	font-style: normal;
+	margin-top: 49px;
+	line-height: 0px;
+	color:	rgba(0,0,0,0.75);
+}
+
+.date {
+	font-family: cursive ;
+	font-weight: lighter;
+	font-size: 16px;
+	font-style: normal;
+	color: rgba(0,0,0,0.4);
+
+}
