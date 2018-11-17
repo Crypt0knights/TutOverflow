@@ -22,7 +22,6 @@ if(in_array($fileActExt,$allowed)){
 			$fileNewName=uniqid('',true).'.'.$fileActExt;
 			$fileDest='uploads/'.$fileNewName;
 			move_uploaded_file($fileTmp, $fileDest);
-			echo "Cheers";
 		}
 		else{
 			echo "File size is too big";
@@ -48,7 +47,8 @@ if($c){
 	$q="INSERT INTO `blog` (`date_pub`, `title`, `content`,`author`,`image`) VALUES ('$date_pub', '$title', '$content','$author','$fileNewName')";
 	$r=mysqli_query($c,$q);
 	if($r){
-       echo "Your blog will be published soon!!";
+       echo "<script> alert('Your blog will be published soon') </script>";
+       header("Location: display.php");
 	}
 	else{
 		"Internal Server error!!";
