@@ -53,7 +53,7 @@
         <!-- /.container -->
     </nav>
 <div class="blog-div">
-    <?php
+<?php
 $c=mysqli_connect('localhost','root','','blogs');
 if($c){
 	$q="select * from `blog` order by blog_id desc";
