@@ -61,5 +61,4 @@ else{
 else{
 echo "Error 404 found!!";
 }
-
 ?>
