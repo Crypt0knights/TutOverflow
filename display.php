@@ -78,6 +78,7 @@ if($c){
 		echo "<br><br>"; 
 	}
 }
+
 ?>
 </div>
 </body>
