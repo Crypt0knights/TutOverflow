@@ -17,7 +17,7 @@ if (!$conn) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="stylesheet" type="text/css" href="src/add.css">
     <title>TutOverflow-Add Tutorials</title>
     <!--<link href="src/css/bootstrap.min.css" rel="stylesheet">
         <link href="src/css/scrolling-nav.css" rel="stylesheet">-->

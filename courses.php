@@ -30,7 +30,7 @@ if (!$check) {
     <title>TutOverflow-Find Courses</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
     <link href="src/css/courses.css" rel="stylesheet">
 
@@ -58,9 +58,9 @@ if (!$check) {
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden" style="color: aq        ua;">
                         <a class="page-scroll" href="#page-top"></a>
-                    <li>
-                        <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
-                    </li>
+                        <li>
+                            <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
+                        </li>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Blog</a>
@@ -77,36 +77,37 @@ if (!$check) {
         </div>
         <!-- /.container -->
     </nav>
+    <!-- FIRST DIV - COURSE INFO -->
     <div class="container-fluid">
         <div id="tech-image">
             <?php
-        $img_src="img/".$search_query.".png";
-        echo '<img src="'.$img_src.'" width="125" height="125" />';?>
+            $img_src="img/".$search_query.".png";
+            echo '<img src="'.$img_src.'" width="125" height="125" />';?>
         </div>
         <div id="tech-info">
             <div id="main-head">
-            <?php
-            echo '<h2>'.ucfirst($search_query)." Tutorials and Courses </h2>";?>
+                <?php
+                echo '<h2>'.ucfirst($search_query)." Tutorials and Courses </h2>";?>
             </div>
             <div id="more-info">
-            <?php
-           $info="Get started with ".ucfirst($search_query)." by following the best online ".ucfirst($search_query)." tutorials submitted & voted by the programming community. Learn them and build your dreams!";
-        echo '<h3>'.$info.'</h3>';
-        ?>
+                <?php
+                $info="Get started with ".ucfirst($search_query)." by following the best online ".ucfirst($search_query)." tutorials submitted & voted by the programming community. Learn them and build your dreams!";
+                echo '<h3>'.$info.'</h3>';
+                ?>
             </div> 
         </div>
     </div>
-    <div id="courses_list">
-        <h1>List of Courses for <?php echo ucfirst($search_query);?></h1>
-        <table>
-          <thead>
+    <!-- SECOND DIV -->
+    <div class="courses-list">
+        <table class="table table-hover">
+            <thead>
               <tr>
-               <th style="width: 70px;">Votes</th>&nbsp;&nbsp;
-               <th style="width: 700px;">Course</th>&nbsp;&nbsp;
-               <th style="width: 200px;">Cost</th>&nbsp;&nbsp;
-               <th style="width: 50px;">Type</th>&nbsp;&nbsp;
-               <th style="width: 100px;">Level</th>&nbsp;&nbsp;
-               <th style="width: 200px;">Add your vote</th>&nbsp;&nbsp;
+               <th scope="col">Votes</th>&nbsp;&nbsp;
+               <th scope="col">Course</th>&nbsp;&nbsp;
+               <th scope="col">Cost</th>&nbsp;&nbsp;
+               <th scope="col">Type</th>&nbsp;&nbsp;
+               <th scope="col">Level</th>&nbsp;&nbsp;
+               <th scope="col">Add your vote</th>&nbsp;&nbsp;
            </tr>
        </thead>
        <tbody>
@@ -121,23 +122,31 @@ if (!$check) {
             exit();
         }
         $i = 1;
-        while ($row = mysqli_fetch_array($tasks)) {?>
-           <tr>
-            <td> <?php echo $row['vote']; ?> </td>
-            <td class="task"> <?php echo "<a href=" . $row['link'] . ">" . ucfirst($row['course_name']) . "</a>"; ?> </td>
-            <td><?php echo ucfirst($row['cost']); ?></td>
-            <td> <?php echo ucfirst($row['course_type']); ?> </td>
-            <td> <?php echo ucfirst($row['dif_level']); ?> </td>
-            <td><form method="get" action="check.php">
-                <input type="text" name="gm" value="<?php echo $row['course_name']; ?>"hidden>
-                <input type="submit" name="vote-button" value="+1"></form></td>
-            </tr>
-            <?php $i++;}
+        while ($row = mysqli_fetch_array($tasks)) 
+            {?>
+               <tr>
+                
+                <td> <?php echo $row['vote']; ?> </td>
+                <td class="task"> <?php echo "<a href=" . $row['link'] . ">" . ucfirst($row['course_name']) . "</a>"; ?> </td>
+                <td><?php echo ucfirst($row['cost']); ?></td>
+                <td> <?php echo ucfirst($row['course_type']); ?> </td>
+                <td> <?php echo ucfirst($row['dif_level']); ?> </td>
+                <td><form method="get" action="check.php">
+                    <input type="text" name="gm" value="<?php echo $row['course_name']; ?>"hidden>
+                    <input type="submit" name="vote-button" value="+1"></form></td>
+                </tr>
+                <?php $i++;
+            }
 //PHP Code ends here
             ?>
         </tbody>
     </table>
+    
 </div>
+
+
+
+
 
 <!-- Scripts -->
 <script src="src/js/jquery.js"></script>
