@@ -45,7 +45,7 @@
                     <li>
                         <a class="page-scroll" href="#trend">Trend Analysis</a>
                     </li>
-                    <a href="add.php"><button class="btn btn-info navbar-btn">+ Add Tutorial</button></a>
+                    <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
                     <button class="btn btn-info navbar-btn">Login/Signup</button>
                 </ul>
 
@@ -54,7 +54,75 @@
         </div>
         <!-- /.container -->
     </nav>
-
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Tutorial</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form name="add-form" method="GET" action="insert.php">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Technology</label>
+                    <div class="col-sm-10">
+                        <select name="ctech">
+                            <option value="c">C</option>
+                            <option value="c++">C++</option>
+                            <option value="python">Python</option>
+                            <option value="java">JAVA</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="go">Golang</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Course Name</label>
+                <div class="col-sm-10">
+                <input type="text" name="cname" placeholder="Course Name">
+            </div>
+        </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Link</label>
+                <div class="col-sm-10">
+                <input type="text" name="clink" placeholder="Course Link">
+            </div>
+        </div>
+        <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Cost</label>
+                <div class="col-sm-10">
+                <input type="radio" name="ccost" value="free">Free
+                <input type="radio" name="ccost" value="paid">Paid
+            </div>
+        </div>
+        <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Type</label>
+                <div class="col-sm-10">
+                <input type="radio" name="ctype" value="video">Video Tutorial
+                <input type="radio" name="ctype" value="book">E-Book/Book
+                <input type="radio" name="ctype" value="online-course">Online Course
+            </div>
+        </div>
+        <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Difficulty Level</label>
+                <div class="col-sm-10">
+                <input type="radio" name="clevel" value="beginner">Beginner<br>
+                <input type="radio" name="clevel" value="medium">Medium<br>
+                <input type="radio" name="clevel" value="expert">Expert<br>
+                <input type="submit" value="Submit Tutorial" name="form-submit">
+            </div>
+        </div>
+            </form>
+            </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
