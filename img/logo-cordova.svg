@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="473px" height="488px" viewBox="0 0 473 488" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Cordova-logo-by-gengns</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="92.2264756%" y1="91.0421734%" x2="2.3410828%" y2="-7.10744872%" id="linearGradient-1">
+            <stop stop-color="#ACACAC" offset="0%"></stop>
+            <stop stop-color="#E9E9E9" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="51.7939699%" cy="97.2429046%" fx="51.7939699%" fy="97.2429046%" r="49.2743764%" gradientTransform="translate(0.517940,0.972429),scale(1.000000,0.171863),translate(-0.517940,-0.972429)" id="radialGradient-2">
+            <stop stop-color="#25303B" offset="0%"></stop>
+            <stop stop-color="#25303B" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="72.6835991%" y1="96.1833074%" x2="25.2059226%" y2="-0.14844358%" id="linearGradient-3">
+            <stop stop-color="#24303A" offset="0%"></stop>
+            <stop stop-color="#394958" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="27.485941%" y1="96.1802027%" x2="74.7480726%" y2="-0.301714731%" id="linearGradient-4">
+            <stop stop-color="#24303A" offset="0%"></stop>
+            <stop stop-color="#394958" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="84.882845%" y1="43.5774811%" x2="10.8454777%" y2="63.8803831%" id="linearGradient-5">
+            <stop stop-color="#E5E5E5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9957329%" y1="0.0208430913%" x2="49.9957329%" y2="100.036007%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.5317" offset="50%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9957329%" y1="100.041735%" x2="49.9957329%" y2="-0.0446658851%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cordova-logo-by-gengns" transform="translate(1.000000, 0.000000)">
+            <g id="path5096" transform="translate(52.000000, 368.000000)" fill="#000000" fill-rule="nonzero" opacity="0.5686">
+                <polygon id="Shape" points="366.4 119.1 282.7 0.5 83.9 0.5 0.6 119.1"></polygon>
+            </g>
+            <g id="g5122">
+                <polygon id="path4824" fill="#7F8082" fill-rule="nonzero" points="382.7 386.3 351.8 450.8 330.5 370.4"></polygon>
+                <polygon id="path4822" fill="#7F8082" fill-rule="nonzero" points="98.2 386.3 119.2 450.8 140.5 370.4"></polygon>
+                <polygon id="path3439" stroke="#D6D6D6" fill="url(#linearGradient-1)" fill-rule="nonzero" stroke-linejoin="round" points="0 172.9 0 172.9 43.8 450.8 119.2 450.8 113 386.3 151.7 386.3 156.6 450.8 314.5 450.8 319.4 386.3 357.8 386.3 351.6 450.8 427.5 450.8 471 173 471 173"></polygon>
+                <polygon id="path4771" fill="url(#radialGradient-2)" fill-rule="nonzero" points="107.7 343.8 130.4 258.8 128.8 87.2 86.3 172.9"></polygon>
+                <polygon id="path4776" fill="#293441" fill-rule="nonzero" points="270.6 70.4 364.6 70.4 362.7 278.1 263.4 278.1"></polygon>
+                <polygon id="path4778" fill="#293441" fill-rule="nonzero" points="202.6 70.5 111.1 70.6 113.3 277.4 206.5 277.4"></polygon>
+                <polygon id="path4735" fill="#2D3948" fill-rule="nonzero" points="120.6 258.8 107.8 343.8 364 343.8 348.8 259.5"></polygon>
+                <polygon id="path4761" fill="url(#linearGradient-3)" fill-rule="nonzero" points="364 343.8 341.7 259.5 342.5 86.8 385.6 173"></polygon>
+                <polygon id="path4794" fill="url(#linearGradient-4)" fill-rule="nonzero" points="107.9 343.8 130.4 258.8 128.8 87.2 86.3 172.9"></polygon>
+                <polygon id="path4739" fill="#2D3B48" fill-rule="nonzero" points="193 118.4 201.5 298.8 267.4 298.8 278 118.4"></polygon>
+                <polygon id="path4810" stroke="#D6D6D6" fill="url(#linearGradient-5)" fill-rule="nonzero" stroke-linejoin="round" points="471 172.9 363.3 0.6 107.2 0.6 0 172.9 86.3 172.9 128.6 87.5 198.1 87.5 193 118.4 278 118.4 273.5 86.6 342.8 86.6 385.7 172.9"></polygon>
+                <polygon id="path4826" fill="#363F49" fill-rule="nonzero" opacity="0.449" points="273.5 86.6 343.4 86.7 385.7 173 364 343.8 201.5 343.8 285.5 173"></polygon>
+                <polygon id="path4832" fill="url(#linearGradient-6)" fill-rule="nonzero" opacity="0.3" points="285.5 172.9 201.5 343.7 107.8 343.7 86.3 172.9"></polygon>
+                <polygon id="path4834" fill="url(#linearGradient-7)" fill-rule="nonzero" opacity="0.2" points="128.6 87.6 198.1 87.6 193 118.4 278 118.4 285.5 172.9 86.3 172.9"></polygon>
+                <g id="g4749" transform="translate(158.150758, 203.393398)">
+                    <g id="g4722" transform="translate(136.388887, 0.319451)">
+                        <g id="ellipse3463" opacity="0.8" fill="#05F0FF" fill-rule="nonzero">
+                            <ellipse id="Oval" cx="10.8897475" cy="41.554191" rx="10.7997496" ry="41.4564164"></ellipse>
+                        </g>
+                        <g id="ellipse4390" opacity="0.9" transform="translate(1.799958, 4.888728)">
+                            <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="9.08978921" cy="37.3498846" rx="8.36980591" ry="36.7632372"></ellipse>
+                            <ellipse id="Oval" stroke="#06EFFE" stroke-width="0.862332623" stroke-linecap="round" cx="9.08978921" cy="37.3498846" rx="8.36980591" ry="36.7632372"></ellipse>
+                        </g>
+                        <g id="ellipse4720" opacity="0.9" transform="translate(1.799958, 7.821965)">
+                            <ellipse id="Oval" fill="#FEFFFF" fill-rule="nonzero" cx="9.08978921" cy="34.5144222" rx="8.36980591" ry="33.9277747"></ellipse>
+                            <ellipse id="Oval" stroke="#06EFFE" stroke-width="0.89681841" stroke-linecap="round" cx="9.08978921" cy="34.5144222" rx="8.36980591" ry="33.9277747"></ellipse>
+                        </g>
+                    </g>
+                    <g id="g4727" transform="translate(0.997071, 5.773326)">
+                        <g id="ellipse4729" opacity="0.8" fill="#05F0FF" fill-rule="nonzero">
+                            <ellipse id="Oval" cx="10.8897475" cy="42.1408384" rx="10.7997496" ry="41.4564164"></ellipse>
+                        </g>
+                        <g id="ellipse4731" opacity="0.9" transform="translate(1.799958, 5.866474)">
+                            <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="9.08978921" cy="36.8610118" rx="8.36980591" ry="36.7632372"></ellipse>
+                            <ellipse id="Oval" stroke="#06EFFE" stroke-width="0.862332623" stroke-linecap="round" cx="9.08978921" cy="36.8610118" rx="8.36980591" ry="36.7632372"></ellipse>
+                        </g>
+                        <g id="ellipse4733" opacity="0.9" transform="translate(1.799958, 8.799711)">
+                            <ellipse id="Oval" fill="#FEFFFF" fill-rule="nonzero" cx="9.08978921" cy="34.0255493" rx="8.36980591" ry="33.9277747"></ellipse>
+                            <ellipse id="Oval" stroke="#06EFFE" stroke-width="0.89681841" stroke-linecap="round" cx="9.08978921" cy="34.0255493" rx="8.36980591" ry="33.9277747"></ellipse>
+                        </g>
+                    </g>
+                </g>
+                <polygon id="path4856" stroke="#D6D6D6" stroke-linejoin="round" points="128.6 87.6 198.1 87.6 193 118.4 278 118.4 273.5 86.6 343.4 86.7 385.7 173 364 343.8 107.8 343.8 86.3 172.9"></polygon>
+                <path d="M384.9,172.9 L86.1,172.9" id="path4858" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero" opacity="0.343"></path>
+            </g>
+        </g>
+    </g>
+</svg>

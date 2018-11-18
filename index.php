@@ -172,29 +172,29 @@ if (!$conn)
             <div class="col-lg-12">
                 <h1 id="header2">Our Popular Tutorials</h1> <br><br>
                 <ul class="flex-container">
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=c'"><img class="topic-icon" src="img/c">C/C++</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=cpp'"><img class="topic-icon" src="img/logo-cpp.svg">C++</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=android'""><img class="topic-icon" src="img/andro.svg">Android</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=android'""><img class="topic-icon" src="img/logo-android.svg">Android</li>
 
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=javascript'"><img class="topic-icon" src="img/js.png">Javascript</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=javascript'"><img class="topic-icon" src="img/logo-javascript.svg">Javascript</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=python'"><img class="topic-icon" src="img/python.png">Python</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=python'"><img class="topic-icon" src="img/logo-python.svg">Python</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=sql'"><img class="topic-icon" src="img/sql.png">SQL</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=sql'"><img class="topic-icon" src="img/logo-sql.svg">SQL</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=php'"><img class="topic-icon" src="img/php.png">PHP</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=php'"><img class="topic-icon" src="img/logo-php.svg">PHP</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=ruby'"><img class="topic-icon" src="img/ruby.png">Ruby</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=ruby'"><img class="topic-icon" src="img/logo-ruby.svg">Ruby</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=java'"><img class="topic-icon" src="img/java.svg">JAVA</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=java'"><img class="topic-icon" src="img/logo-java.svg">JAVA</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=matlab'"><img class="topic-icon" src="img/matlab.png">MATLAB</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=matlab'"><img class="topic-icon" src="img/logo-matlab.svg">MATLAB</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=data structures and algorithms'"><img class="topic-icon" src="img/ds.svg">Data Strucures/Algorithms</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=data-structures-algorithms'"><img class="topic-icon" src="img/logo-data-structures-algorithms.svg">Data Strucures/Algorithms</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=reactjs'"><img class="topic-icon" src="img/react.png">React</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=reactjs'"><img class="topic-icon" src="img/logo-reactjs.svg">React</li>
                     
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=angularjs'"><img class="topic-icon" src="img/angular.svg">Angular</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=angular'"><img class="topic-icon" src="img/logo-angular.svg">Angular</li>
 
                 </ul>
             </div>

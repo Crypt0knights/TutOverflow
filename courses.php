@@ -81,7 +81,7 @@ if (!$check) {
     <div class="container-fluid">
         <div id="tech-image">
             <?php
-            $img_src="img/".$search_query.".png";
+            $img_src="img/logo-".$search_query.".svg";
             echo '<img src="'.$img_src.'" width="125" height="125" />';?>
         </div>
         <div id="tech-info">
