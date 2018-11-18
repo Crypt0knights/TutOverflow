@@ -1,3 +1,14 @@
+<?php
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbname = "projectdb";
+$conn = mysqli_connect($server, $username, $password, $dbname);
+if (!$conn) 
+{
+    die("failed" . mysqli_error());
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,27 +78,38 @@
         <form name="add-form" method="GET" action="insert.php">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Technology</label>
-                <div class="col-sm-10">
-                    <select name="ctech">
-                        <option value="c">C</option>
-                        <option value="c++">C++</option>
-                        <option value="python">Python</option>
-                        <option value="java">JAVA</option>
-                        <option value="ruby">Ruby</option>
-                        <option value="go">Golang</option>
-                    </select>
+                    <?php
+                    $q1="SELECT * from Languages;";
+                    $check=mysqli_query($conn,$q1);
+                    if (!$check) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    ?>
+                    <div class="col-sm-10">
+                        <select name="ctech">
+                            <?php
+                            while ($row = mysqli_fetch_array($check))
+                            {?>
+                                <?php echo $row['technology']; ?>
+                                <option value="<?php echo $row['technology']; ?>"><?php echo ucfirst($row['technology']); ?></option>
+                                
+                            <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
                 </div>
-            </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Course Name</label>
                 <div class="col-sm-10">
-                    <input type="text" name="cname" placeholder="Course Name">
+                    <input id="main-search" type="text" name="cname" placeholder="Course Name">
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Link</label>
                 <div class="col-sm-10">
-                    <input type="text" name="clink" placeholder="Course Link">
+                    <input id="main-search" type="text" name="clink" placeholder="Course Link">
                 </div>
             </div>
             <div class="form-group row">
@@ -150,7 +172,7 @@
             <div class="col-lg-12">
                 <h1 id="header2">Our Popular Tutorials</h1> <br><br>
                 <ul class="flex-container">
-                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=c'"><img class="topic-icon" src="img/cplspls.svg">C/C++</li>
+                    <li class="flex-item" onclick="window.location.href='courses.php?search_tech=c'"><img class="topic-icon" src="img/c">C/C++</li>
                     
                     <li class="flex-item" onclick="window.location.href='courses.php?search_tech=android'""><img class="topic-icon" src="img/andro.svg">Android</li>
 

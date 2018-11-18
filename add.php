@@ -1,3 +1,14 @@
+<?php
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbname = "projectdb";
+$conn = mysqli_connect($server, $username, $password, $dbname);
+if (!$conn) 
+{
+    die("failed" . mysqli_error());
+}
+?>
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -22,14 +33,25 @@
             <form name="add-form" method="GET" action="insert.php">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Technology</label>
+                    <?php
+                    $q1="SELECT * from Languages;";
+                    $check=mysqli_query($conn,$q1);
+                    if (!$check) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    ?>
                     <div class="col-sm-10">
                         <select name="ctech">
-                            <option value="c">C</option>
-                            <option value="c++">C++</option>
-                            <option value="python">Python</option>
-                            <option value="java">JAVA</option>
-                            <option value="ruby">Ruby</option>
-                            <option value="go">Golang</option>
+                            <?php
+                            while ($row = mysqli_fetch_array($check))
+                            {?>
+                                <?php echo $row['technology']; ?>
+                                <option value="<?php echo $row['technology']; ?>"><?php echo ucfirst($row['technology']); ?></option>
+                                
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
                 </div>
