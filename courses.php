@@ -133,7 +133,7 @@ if (!$check) {
                 <td> <?php echo ucfirst($row['dif_level']); ?> </td>
                 <td><form method="get" action="check.php">
                     <input type="text" name="gm" value="<?php echo $row['course_name']; ?>"hidden>
-                    <input type="submit" name="vote-button" value="+1"></form></td>
+                    <input id="plus-one-button" type="submit" name="vote-button" value="+1"></form></td>
                 </tr>
                 <?php $i++;
             }

@@ -19,8 +19,6 @@
     <body >
 
         <div id="course-form">
-            <h1>Add Tutorials.</h1>
-
             <form name="add-form" method="GET" action="insert.php">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Technology</label>
@@ -50,27 +48,30 @@
         <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Cost</label>
                 <div class="col-sm-10">
-                <input type="radio" name="ccost" value="free">Free
+                <input type="radio" name="ccost" value="free">Free&nbsp;&nbsp;
                 <input type="radio" name="ccost" value="paid">Paid
             </div>
         </div>
         <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Type</label>
                 <div class="col-sm-10">
-                <input type="radio" name="ctype" value="video">Video Tutorial
-                <input type="radio" name="ctype" value="book">E-Book/Book
+                <input type="radio" name="ctype" value="video">Video Tutorial&nbsp;&nbsp;
+                <input type="radio" name="ctype" value="book">E-Book/Book&nbsp;&nbsp;
                 <input type="radio" name="ctype" value="online-course">Online Course
             </div>
         </div>
         <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Difficulty Level</label>
                 <div class="col-sm-10">
-                <input type="radio" name="clevel" value="beginner">Beginner<br>
-                <input type="radio" name="clevel" value="medium">Medium<br>
-                <input type="radio" name="clevel" value="expert">Expert<br>
-                <input type="submit" value="Submit Tutorial" name="form-submit">
+                <input type="radio" name="clevel" value="beginner">Beginner&nbsp;&nbsp;
+                <input type="radio" name="clevel" value="medium">Medium&nbsp;&nbsp;
+                <input type="radio" name="clevel" value="expert">Expert
+                
             </div>
         </div>
+        <div>
+        <input type="submit" class="btn btn-primary" value="Submit Tutorial" name="form-submit">
+    </div>
             </form>
             
         </div>

@@ -36,3 +36,12 @@
 .darken-grey-text {
     color: #2E2E2E;
 }
+#plus-one-button{
+	 width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

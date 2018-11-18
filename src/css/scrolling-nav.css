@@ -117,7 +117,7 @@ font-family: 'Dosis', sans-serif;
      text-align: center;
     
 }
-input{
+#main-search{
        width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
