@@ -54,6 +54,7 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
 </head>
 <body style ='font-family: "Lato"'>
+<p><a href="complete_analysis.php">Click here to see our Previous Survey Result </a></p>
 <FORM NAME ="form1" METHOD ="POST" ACTION ="process1.php">
 <h2><?PHP print $question; ?></h2>
 <hr>

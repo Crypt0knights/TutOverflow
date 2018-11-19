@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>TutOverflow</title>
-    <link href="src/css/bootstrap.min.css" rel="stylesheet">
-    <link href="src/css/scrolling-nav.css" rel="stylesheet">
-    <link href="src/css/landing.css" rel="stylesheet">
-</head>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <title>TutOverflow</title>
+        <link href="src/css/bootstrap.min.css" rel="stylesheet">
+        <link href="src/css/scrolling-nav.css" rel="stylesheet">
+        <link href="src/css/landing.css" rel="stylesheet">
+    </head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
-            </div>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden" style="color: aqua;">
-                        <a class="page-scroll" href="#page-top"></a>
-                    <li>
-                        <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
-                    </li>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="display.php">Blog</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#trend">Trend Analysis</a>
-                    </li>
-                    <button class="btn btn-info navbar-btn">+ Add Tutorial</button>
-                    <button class="btn btn-info navbar-btn">Login/Signup</button>
-                </ul>
-
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 id="header">TutOverflow</h1>
-                    <h3 id="header">Explore & Share the Best Online Programming Courses & Tutorials</h3><br>
-                    <form action="#">
-                        <input type="search" name="search" placeholder="Search for the language you want to learn">
-                    </form>
-                    <br>
-                    <a class="btn btn-default page-scroll" href="#tutorials">Find tutorials</a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Tutorials Section -->
-    <section id="tutorials" class="tutorials-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 id="header2">Our Popular Tutorials</h1> <br><br>
-                    <ul class="flex-container">
-                        <li class="flex-item" value="cplspls"><a href="src/html/courses.html"><img class="topic-icon" src="img/cplspls.svg"></a>C/C++</li>
-                        
-                        <li class="flex-item" value="andro"><a href="src/html/courses.html"><img class="topic-icon" src="img/andro.svg"></a>Android</li>
-
-                        <li class="flex-item" value="jscript"><a href="src/html/courses.html"><img class="topic-icon" src="img/js.png"></a>Javascript</li>
-                        
-                        <li class="flex-item" value="python"><a href="src/html/courses.html"><img class="topic-icon" src="img/python.png"></a>Python</li>
-                        
-                        <li class="flex-item" value="sql"><a href="src/html/courses.html"><img class="topic-icon" src="img/sql.png"></a>SQL</li>
-                        
-                        <li class="flex-item" value="php"><a href="src/html/courses.html"><img class="topic-icon" src="img/php.png"></a>PHP</li>
-                        
-                        <li class="flex-item" value="ruby"><a href="src/html/courses.html"><img class="topic-icon" src="img/ruby.png"></a>Ruby</li>
-                        
-                        <li class="flex-item" value="java"><a href="src/html/courses.html"><img class="topic-icon" src="img/java.svg"></a>JAVA</li>
-                        
-                        <li class="flex-item" value="matlab"><a href="src/html/courses.html"><img class="topic-icon" src="img/matlab.png"></a>MATLAB</li>
-                        
-                        <li class="flex-item" value="dsalgo"><a href="src/html/courses.html"><img class="topic-icon" src="img/ds.svg"></a>Data Strucures/Algorithms</li>
-                        
-                        <li class="flex-item" value="react"><a href="src/html/courses.html"><img class="topic-icon" src="img/react.png"></a>React</li>
-                        
-                        <li class="flex-item" value="angular"s><a href="src/html/courses.html"><img class="topic-icon" src="img/angular.svg"></a>Angular</li>
-
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden" style="color: aqua;">
+                            <a class="page-scroll" href="#page-top"></a>
+                        <li>
+                            <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="display.php">Blog</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="Trend/survey/main.html">Trend Analysis</a>
+                        </li>
+                        <button class="btn btn-info navbar-btn">+ Add Tutorial</button>
+                        <button class="btn btn-info navbar-btn">Login/Signup</button>
                     </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="header">TutOverflow</h1>
+                        <h3 id="header">Explore & Share the Best Online Programming Courses & Tutorials</h3><br>
+                        <form action="#">
+                            <input type="search" name="search" placeholder="Search for the language you want to learn">
+                        </form>
+                        <br>
+                        <a class="btn btn-default page-scroll" href="#tutorials">Find tutorials</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- jQuery -->
-    <script src="src/js/jquery.js"></script>
+        <!-- Tutorials Section -->
+        <section id="tutorials" class="tutorials-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="header2">Our Popular Tutorials</h1> <br><br>
+                        <ul class="flex-container">
+                            <li class="flex-item" value="cplspls"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/cplspls.svg"></a>C/C++</li>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="src/js/bootstrap.min.js"></script>
+                            <li class="flex-item" value="andro"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/andro.svg"></a>Android</li>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="src/js/jquery.easing.min.js"></script>
-    <script src="src/js/scrolling-nav.js"></script>
-</body>
+                            <li class="flex-item" value="jscript"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/js.png"></a>Javascript</li>
+
+                            <li class="flex-item" value="python"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/python.png"></a>Python</li>
+
+                            <li class="flex-item" value="sql"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/sql.png"></a>SQL</li>
+
+                            <li class="flex-item" value="php"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/php.png"></a>PHP</li>
+
+                            <li class="flex-item" value="ruby"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/ruby.png"></a>Ruby</li>
+
+                            <li class="flex-item" value="java"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/java.svg"></a>JAVA</li>
+
+                            <li class="flex-item" value="matlab"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/matlab.png"></a>MATLAB</li>
+
+                            <li class="flex-item" value="dsalgo"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/ds.svg"></a>Data Strucures/Algorithms</li>
+
+                            <li class="flex-item" value="react"><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/react.png"></a>React</li>
+
+                            <li class="flex-item" value="angular" s><a href="src/html/courses.html"><img class="topic-icon"
+                                        src="img/angular.svg"></a>Angular</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jQuery -->
+        <script src="src/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="src/js/bootstrap.min.js"></script>
+
+        <!-- Scrolling Nav JavaScript -->
+        <script src="src/js/jquery.easing.min.js"></script>
+        <script src="src/js/scrolling-nav.js"></script>
+    </body>
+
 </html>

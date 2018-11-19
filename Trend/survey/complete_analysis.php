@@ -40,8 +40,8 @@ $VoteF = $characters[1]->VoteF;
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
             <h1>Complete Analysis</h1>
+            <p><a href="survey1.php">Click here to Contribute to our Survey.</a></p>
             <br>
-
             <label id="plotChart1Title"></label><canvas id="plotChart1" width="200" height="50"></canvas><hr>
             <label id="plotChart2Title"></label><canvas id="plotChart2" width="200" height="50"></canvas><hr>
             <label id="plotChart3Title"></label><canvas id="plotChart3" width="200" height="50"></canvas><hr>
