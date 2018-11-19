@@ -1,0 +1,27 @@
+var plotCanvas = document.getElementById("plotChart");
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+var plotData = 
+{
+        labels: [a1,a2,a3,a4,a5,a6],
+        datasets: 
+        [
+        {
+            data: [v1, v2, v3, v4, v5, v6],
+            backgroundColor: 
+            [
+                "#FF6384",
+                "#63FF84",
+                "#84FF63",
+                "#8463FF",
+                "#6384FF"
+            ]
+        }
+        ]
+};
+
+var pieChart = new Chart(plotCanvas, 
+{
+    type: 'pie',
+    data: plotData
+});
