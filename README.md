@@ -21,8 +21,6 @@
 
 6. SQL Cheatsheet - https://github.com/enochtangg/quick-SQL-cheatsheet
 
-7. Coursera course on PHP and MySQL (Audit the course) - https://www.coursera.org/learn/database-applications-php
-
 ## Possible Front-end Resources:
 
 * https://ritwik12.github.io/Prototype-For-Hackr.io/
@@ -33,5 +31,3 @@
 ## Fully Functional Prototype
 * https://github.com/anuragphadnis/HackrIntern
 
-#### ER model
-[hit me up](https://tinyurl.com/ybxly6um)

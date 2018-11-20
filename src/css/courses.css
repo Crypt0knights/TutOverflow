@@ -1,0 +1,47 @@
+.container-fluid{
+	
+	display: inline-flex;
+	margin-top: 100px;
+	font-family: "Lato", sans-serif;
+	padding: 20px;
+	align-items: flex-start;
+	align-content: flex-start;
+	margin-right: auto;
+	margin-left: auto;
+}
+#tech-image{
+
+	margin-right: 20px;
+	margin-left: 50px;
+}
+#tech-info{
+	margin-left: 15px;
+	align-content: center;
+	margin-right: 50px;
+	margin-bottom: 0px;
+}
+#more-info{
+	color: darkgray;
+}
+.courses-list{
+	padding: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: "lato",sans-serif;
+	font-size: 20px;
+}
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+#plus-one-button{
+	 width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
