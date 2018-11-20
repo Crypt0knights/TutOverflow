@@ -1,6 +1,6 @@
 <?PHP
 $voteMessage = "";
-$url = 'http://localhost/survey/fetch_json.php'; // path to your JSON file
+$url = 'http://localhost:8000/TutOverflow/Trend/survey/fetch_json.php'; // path to your JSON file
 $data = file_get_contents($url); // put the contents of the file into a variable
 $characters = json_decode($data); // decode the JSON feed
 

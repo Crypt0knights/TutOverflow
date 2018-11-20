@@ -5,7 +5,7 @@ $username = "";
 $email    = "";
 $errors = array(); 
 
-$db = mysqli_connect('localhost:3308','root','','dbmsproject');
+$db = mysqli_connect('localhost','root','','survey');
 
 if (isset($_POST['reg_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -69,5 +69,4 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
-
 ?>

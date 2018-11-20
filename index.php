@@ -2,7 +2,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "projectdb";
+$dbname = "survey";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) 
 {
@@ -54,10 +54,10 @@ if (!$conn)
                         <a class="page-scroll" href="display.php">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#trend">Trend Analysis</a>
+                        <a class="page-scroll" href="Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                    <button class="btn btn-info navbar-btn">Login/Signup</button>
+                    <a href="db.php"><button class="btn btn-info navbar-btn">Login/Signup</button></a>
                 </ul>
 
             </div>
@@ -150,6 +150,7 @@ if (!$conn)
 </div>
 </div>
 <!-- MODAL ENDS HERE. -->
+
 
 <!-- Intro Section -->
 <section id="intro" class="intro-section">

@@ -2,7 +2,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "projectdb";
+$dbname = "survey";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) 
 {
@@ -76,7 +76,7 @@ if(mysqli_num_rows($tasks)==0)
                         <a class="page-scroll" href="display.php">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#trend">Trend Analysis</a>
+                        <a class="page-scroll" href="/TutOverflow/Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
                     <button class="btn btn-info navbar-btn">Login/Signup</button>

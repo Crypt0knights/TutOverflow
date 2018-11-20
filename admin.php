@@ -15,7 +15,7 @@ $fileError=$_FILES['image']['error'];
 $fileType=$_FILES['image']['type'];
 $fileExt=explode('.',$fileName);
 $fileActExt=strtolower(end($fileExt));
-$allowed=array('jpeg','jpg','png');
+$allowed=array('jpeg','jpg','png','svg');
 if(in_array($fileActExt,$allowed)){
 	if($fileError===0){
 		if($fileSize<100000){
@@ -39,7 +39,7 @@ else{
 }
 
 #connections
-$c=mysqli_connect('localhost','root','','blogs');
+$c=mysqli_connect('localhost','root','','survey');
 if($c){
 	$q="INSERT INTO `blog` (`date_pub`, `title`, `content`,`author`,`image`) VALUES ('$date_pub', '$title', '$content','$author','$fileNewName')";
 	$r=mysqli_query($c,$q);
