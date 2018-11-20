@@ -1,5 +1,5 @@
 @import "compass/css3";
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 .flex-container {
   padding: 1;
   margin: 0;
@@ -98,4 +98,30 @@
 	font-size: 16px;
 	font-style: normal;
 	color: #586069;
+}
+.container1{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1%;
+    background-color: #7682cc;
+}
+.footer-box{
+    width: 15%;
+    margin:auto;
+}
+.footer-box p{
+    color: #fff;
+    background-color: #7682cc;
+    font-size: 15px;
+    margin-bottom: 0px;
+    height: 1%;
+    align-content: center;
+}
+.footer-box .fa{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;  
+    font-size: 18px;
 }
