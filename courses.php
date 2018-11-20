@@ -15,6 +15,19 @@ $check = mysqli_query($conn, $count_query);
 if (!$check) {
     printf("Error: %s\n", mysqli_error($conn));
     exit();
+
+}
+$sql = "SELECT course_name,link,dif_level,course_type,cost,vote from Courses where technology='$search_query' order by vote desc ";
+        $tasks = mysqli_query($conn, $sql);
+        if (!$tasks) {
+            printf("Error: %s\n", mysqli_error($conn));
+            exit();
+        }
+if(mysqli_num_rows($tasks)==0)
+{
+    echo "<script>alert('Sorry, No tutorial of this technology. Please use a valid technology.');
+                    window.location.href='index.php';
+                    </script>";
 }
 ?>
 <!-- HTML Code Starts -->
@@ -115,12 +128,7 @@ if (!$check) {
         <?php
 
 
-        $sql = "SELECT course_name,link,dif_level,course_type,cost,vote from Courses where technology='$search_query' order by vote desc ";
-        $tasks = mysqli_query($conn, $sql);
-        if (!$tasks) {
-            printf("Error: %s\n", mysqli_error($conn));
-            exit();
-        }
+        
         $i = 1;
         while ($row = mysqli_fetch_array($tasks)) 
             {?>
