@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -46,13 +47,18 @@ if (!$conn)
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
+                        
                         <a class="page-scroll" href="write.php">Write Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/TutOverflow/Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                    <button class="btn btn-info navbar-btn">Login/Signup</button>
+                    <?php if(!isset($_SESSION['username']))
+                    echo  "<a href='db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
+                    else
+                        echo "<a href='db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
+                ?>
                 </ul>
 
             </div>

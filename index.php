@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -18,7 +19,7 @@ if (!$conn)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="icon" href="favicon.ico">
     <title>TutOverflow</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
@@ -57,7 +58,11 @@ if (!$conn)
                         <a class="page-scroll" href="Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                    <a href="db.php"><button class="btn btn-info navbar-btn">Login/Signup</button></a>
+                    <?php if(!isset($_SESSION['username']))
+                    echo  "<a href='db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
+                    else
+                        echo "<a href='db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
+                ?>
                 </ul>
 
             </div>
