@@ -44,10 +44,10 @@ if (!$conn)
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden" style="color: aq        ua;">
+                    <li class="hidden" style="color: aqua;">
                         <a class="page-scroll" href="#page-top"></a>
                         <li>
-                            <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
+                            <a class="page-scroll" href="#tutorials">Popular tutorials</a>
                         </li>
                     </li>
                     <li>
@@ -80,73 +80,73 @@ if (!$conn)
         <form name="add-form" method="GET" action="insert.php">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Technology</label>
-                    <?php
-                    $q1="SELECT * from Languages;";
-                    $check=mysqli_query($conn,$q1);
-                    if (!$check) {
-                        printf("Error: %s\n", mysqli_error($conn));
-                        exit();
-                    }
-                    ?>
-                    <div class="col-sm-10">
-                        <select name="ctech">
-                            <?php
-                            while ($row = mysqli_fetch_array($check))
+                <?php
+                $q1="SELECT * from Languages;";
+                $check=mysqli_query($conn,$q1);
+                if (!$check) {
+                    printf("Error: %s\n", mysqli_error($conn));
+                    exit();
+                }
+                ?>
+                <div class="col-sm-10">
+                    <select name="ctech">
+                        <?php
+                        while ($row = mysqli_fetch_array($check))
                             {?>
                                 <?php echo $row['technology']; ?>
                                 <option value="<?php echo $row['technology']; ?>"><?php echo ucfirst($row['technology']); ?></option>
                                 
-                            <?php
+                                <?php
                             }
                             ?>
                         </select>
                     </div>
                 </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Course Name</label>
-                <div class="col-sm-10">
-                    <input id="main-search" type="text" name="cname" placeholder="Course Name">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Course Name</label>
+                    <div class="col-sm-10">
+                        <input id="main-search" type="text" name="cname" placeholder="Course Name">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Link</label>
-                <div class="col-sm-10">
-                    <input id="main-search" type="text" name="clink" placeholder="Course Link">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Link</label>
+                    <div class="col-sm-10">
+                        <input id="main-search" type="text" name="clink" placeholder="Course Link">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Cost</label>
-                <div class="col-sm-10">
-                    <input type="radio" name="ccost" value="free">Free&nbsp;&nbsp;
-                    <input type="radio" name="ccost" value="paid">Paid
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Cost</label>
+                    <div class="col-sm-10">
+                        <input type="radio" name="ccost" value="free">Free&nbsp;&nbsp;
+                        <input type="radio" name="ccost" value="paid">Paid
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Type</label>
-                <div class="col-sm-10">
-                    <input type="radio" name="ctype" value="video">Video Tutorial&nbsp;&nbsp;
-                    <input type="radio" name="ctype" value="book">E-Book/Book&nbsp;&nbsp;
-                    <input type="radio" name="ctype" value="online-course">Online Course
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Type</label>
+                    <div class="col-sm-10">
+                        <input type="radio" name="ctype" value="video">Video Tutorial&nbsp;&nbsp;
+                        <input type="radio" name="ctype" value="book">E-Book/Book&nbsp;&nbsp;
+                        <input type="radio" name="ctype" value="online-course">Online Course
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Difficulty Level</label>
-                <div class="col-sm-10">
-                    <input type="radio" name="clevel" value="beginner">Beginner&nbsp;&nbsp;
-                    <input type="radio" name="clevel" value="medium">Medium&nbsp;&nbsp;
-                    <input type="radio" name="clevel" value="expert">Expert
-                    
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Difficulty Level</label>
+                    <div class="col-sm-10">
+                        <input type="radio" name="clevel" value="beginner">Beginner&nbsp;&nbsp;
+                        <input type="radio" name="clevel" value="medium">Medium&nbsp;&nbsp;
+                        <input type="radio" name="clevel" value="expert">Expert
+                        
+                    </div>
                 </div>
-            </div>
-            <div>
-                <input type="submit" class="btn btn-primary" value="Submit Tutorial" name="form-submit">
-            </div>
-        </form>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Submit Tutorial" name="form-submit">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-</div>
 </div>
 </div>
 <!-- MODAL ENDS HERE. -->
@@ -157,7 +157,7 @@ if (!$conn)
         <div class="row">
             <div class="col-lg-12">
                 <h1 id="header">TutOverflow</h1>
-                <h3 id="header">Find & Share the Best Online Programming Courses & Tutorials</h3><br>
+                <h3 id="header">Find & Share the Best Rated Online Programming Courses & Tutorials</h3><br>
                 <form action="courses.php" method="GET" name="tech_form">
                     <input id="main-search" type="search" name="search_tech" placeholder="Search for the language you want to learn">
                     <input id="main-search" type="submit" class="btn btn-primary" value="Find Tutorials">
