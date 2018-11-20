@@ -65,6 +65,8 @@ if (!$conn)
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- MODAL BEGINS HERE -->
     <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -147,6 +149,8 @@ if (!$conn)
 </div>
 </div>
 </div>
+<!-- MODAL ENDS HERE. -->
+
 <!-- Intro Section -->
 <section id="intro" class="intro-section">
     <div class="container">

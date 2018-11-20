@@ -25,7 +25,7 @@ $sql = "SELECT course_name,link,dif_level,course_type,cost,vote from Courses whe
         }
 if(mysqli_num_rows($tasks)==0)
 {
-    echo "<script>alert('Sorry, No tutorial of this technology. Please use a valid technology.');
+    echo "<script>alert('\t\t\t\t\t\t\tSorry, no results found!\t\t\t\t\t\t\t\\n\\nWe are a community-driven website. Please feel free to submit the courses/tutorials that you would want to recommend to the programming community.\t\t\t\t\t');
                     window.location.href='index.php';
                     </script>";
 }
@@ -62,18 +62,15 @@ if(mysqli_num_rows($tasks)==0)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> 
-                <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
+                <a class="navbar-brand page-scroll" href="index.php">TutOverflow</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden" style="color: aq        ua;">
+                    <li class="hidden" style="color: aqua;">
                         <a class="page-scroll" href="#page-top"></a>
-                        <li>
-                            <a class="page-scroll" href="#tutorials">Popular Tutorials</a>
-                        </li>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Blog</a>
@@ -81,7 +78,7 @@ if(mysqli_num_rows($tasks)==0)
                     <li>
                         <a class="page-scroll" href="#trend">Trend Analysis</a>
                     </li>
-                    <a href="add.php"><button class="btn btn-info navbar-btn">+ Add Tutorial</button></a>
+                    <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
                     <button class="btn btn-info navbar-btn">Login/Signup</button>
                 </ul>
 
@@ -90,6 +87,90 @@ if(mysqli_num_rows($tasks)==0)
         </div>
         <!-- /.container -->
     </nav>
+        <!-- MODAL BEGINS HERE -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Add Tutorial</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+        <form name="add-form" method="GET" action="insert.php">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Technology</label>
+                    <?php
+                    $q1="SELECT * from Languages;";
+                    $check=mysqli_query($conn,$q1);
+                    if (!$check) {
+                        printf("Error: %s\n", mysqli_error($conn));
+                        exit();
+                    }
+                    ?>
+                    <div class="col-sm-10">
+                        <select name="ctech">
+                            <?php
+                            while ($row = mysqli_fetch_array($check))
+                            {?>
+                                <?php echo $row['technology']; ?>
+                                <option value="<?php echo $row['technology']; ?>"><?php echo ucfirst($row['technology']); ?></option>
+                                
+                            <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Course Name</label>
+                <div class="col-sm-10">
+                    <input id="main-search" type="text" name="cname" placeholder="Course Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Link</label>
+                <div class="col-sm-10">
+                    <input id="main-search" type="text" name="clink" placeholder="Course Link">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Cost</label>
+                <div class="col-sm-10">
+                    <input type="radio" name="ccost" value="free">Free&nbsp;&nbsp;
+                    <input type="radio" name="ccost" value="paid">Paid
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Type</label>
+                <div class="col-sm-10">
+                    <input type="radio" name="ctype" value="video">Video Tutorial&nbsp;&nbsp;
+                    <input type="radio" name="ctype" value="book">E-Book/Book&nbsp;&nbsp;
+                    <input type="radio" name="ctype" value="online-course">Online Course
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Difficulty Level</label>
+                <div class="col-sm-10">
+                    <input type="radio" name="clevel" value="beginner">Beginner&nbsp;&nbsp;
+                    <input type="radio" name="clevel" value="medium">Medium&nbsp;&nbsp;
+                    <input type="radio" name="clevel" value="expert">Expert
+                    
+                </div>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" value="Submit Tutorial" name="form-submit">
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+</div>
+<!-- MODAL ENDS HERE -->
     <!-- FIRST DIV - COURSE INFO -->
     <div class="container-fluid">
         <div id="tech-image">
