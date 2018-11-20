@@ -51,7 +51,7 @@ if (!$conn)
                         </li>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Blog</a>
+                        <a class="page-scroll" href="display.php">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#trend">Trend Analysis</a>

@@ -73,7 +73,7 @@ if(mysqli_num_rows($tasks)==0)
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Blog</a>
+                        <a class="page-scroll" href="display.php">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#trend">Trend Analysis</a>
@@ -81,7 +81,6 @@ if(mysqli_num_rows($tasks)==0)
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
                     <button class="btn btn-info navbar-btn">Login/Signup</button>
                 </ul>
-
             </div>
             <!-- /.navbar-collapse -->
         </div>
