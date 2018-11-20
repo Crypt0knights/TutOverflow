@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link rel="stylesheet" type="text/css" href="src/css/blog.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 </head>

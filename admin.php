@@ -38,17 +38,15 @@ else{
 	exit();
 }
 
-
-
-
 #connections
 $c=mysqli_connect('localhost','root','','blogs');
 if($c){
 	$q="INSERT INTO `blog` (`date_pub`, `title`, `content`,`author`,`image`) VALUES ('$date_pub', '$title', '$content','$author','$fileNewName')";
 	$r=mysqli_query($c,$q);
 	if($r){
-       echo "<script> alert('Your blog will be published soon') </script>";
-       header("Location: display.php");
+	   echo "<script> alert('Your blog will be published soon'); 
+	           window.location.href='display.php';
+			</script>";
 	}
 	else{
 		"Internal Server error!!";
@@ -61,5 +59,4 @@ else{
 else{
 echo "Error 404 found!!";
 }
-
 ?>
