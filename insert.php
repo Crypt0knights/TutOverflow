@@ -1,4 +1,10 @@
 <?php
+session_start();
+ if (!isset($_SESSION['username'])) {
+    ?><script>alert('Please login to contribute.');
+    window.location='index.php';</script>
+    <?php
+  }
 $server = "localhost";
 $username = "root";
 $password = "";
