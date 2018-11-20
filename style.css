@@ -1,4 +1,4 @@
-* {
+  * {
   margin: 0px;
   padding: 0px;
 }
@@ -17,6 +17,7 @@ body {
   border-bottom: none;
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
+  margin-top: 150px;
 }
 form, .content {
   width: 30%;
@@ -42,7 +43,7 @@ form, .content {
   border-radius: 5px;
   border: 1px solid gray;
 }
-.btn {
+.button1 {
 	width: 95%;
   padding: 8px;
   font-size: 15px;
