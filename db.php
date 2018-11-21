@@ -8,7 +8,7 @@
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	header("location: login.php");
+  	header("location: index.php");
   }
 ?>
 <!DOCTYPE html>
@@ -16,6 +16,7 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="src/css/landing.css" rel="stylesheet">
 </head>
 <body>
 
@@ -36,9 +37,22 @@
 
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    	<p> <a href="db.php?logout='1'" style="color: red;">logout</a></p>
     <?php endif ?>
 </div>
 		
 </body>
+<footer>
+  <div class="container1">
+      <div class="footer-box">
+          <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-github"></i>
+          <i class="fa fa-behance"></i>
+      </div>
+            
+  </div>
+</footer>
 </html>

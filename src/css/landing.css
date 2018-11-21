@@ -1,5 +1,5 @@
 @import "compass/css3";
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 .flex-container {
   padding: 1;
   margin: 0;
@@ -52,4 +52,78 @@
   font-weight: normal;
   font-family: "Lato", sans-serif;
   color: Peru ;
+}
+
+.title{
+	font-family: serif;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	font-size: 66px;
+	color: rgba(0,0,0,.84);
+	line-height: 64px;
+	letter-spacing: 0;
+}
+.blog-div{
+	margin-top: 100px;
+}
+.blog-div{
+	margin-top: 100px;
+}
+
+.section_content {
+	font-family: sans-serif;
+	letter-spacing: .01rem;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.58;
+	letter-spacing: -.003em;
+	margin-left: 300px;
+	margin-right: 300px;
+	max-width: 1300px;
+}
+.author {
+	font-family: sans-serif,monospace !important;
+	font-weight: 500;
+	font-size: 20px;
+	font-style: normal;
+	margin-top: 55px;
+	line-height: 0px;
+	color:	rgba(0,0,0,0.7);
+}
+
+.date {
+	font-family: cursive ;
+	font-weight: lighter;
+	font-size: 16px;
+	font-style: normal;
+	color: #586069;
+}
+.container1{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1%;
+    background-color: #7682cc;
+}
+.footer-box{
+    width: 15%;
+    margin:auto;
+}
+.footer-box p{
+    color: #fff;
+    background-color: #7682cc;
+    font-size: 15px;
+    margin-bottom: 0px;
+    height: 1%;
+    align-content: center;
+}
+.footer-box .fa{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;  
+    font-size: 18px;
+    margin-left: 0.1px;
+
 }

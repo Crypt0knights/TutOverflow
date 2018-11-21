@@ -3,7 +3,7 @@ session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "survey";
+$dbname = "projectdb";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) 
 {
@@ -12,65 +12,65 @@ if (!$conn)
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    <title>TutOverflow-Blogs</title>
-    <link href="src/css/bootstrap.min.css" rel="stylesheet">
-    <link href="src/css/scrolling-nav.css" rel="stylesheet">
-    <link href="src/css/landing.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-</head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="icon" href="/TutOverflow/favicon.ico">
+        <title>TutOverflow-Trend Analysis</title>
+        <link href="../../src/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../src/css/scrolling-nav.css" rel="stylesheet">
+        <link href="../../src/css/landing.css" rel="stylesheet">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> 
-                <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
-            </div>
+    </head>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden" style="color: aqua;">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="write.php">Write Blog</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="Trend/survey/main.php">Trend Analysis</a>
-                    </li>
-                    <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                    <?php if(!isset($_SESSION['username']))
-                    echo  "<a href='db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <div>
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="position: relative;">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="/TutOverflow/index.php">TutOverflow</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden" style="color: aqua;">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="/TutOverflow/display.php">Blog</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="main.php">Trend Analysis</a>
+                            </li>
+                            <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
+                            <?php if(!isset($_SESSION['username']))
+                    echo  "<a href='/TutOverflow/db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
                     else
-                        echo "<a href='db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
+                        echo "<a href='/TutOverflow/db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
                 ?>
-                </ul>
+                        </ul>
 
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- MODAL BEGINS HERE -->
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -154,46 +154,22 @@ if (!$conn)
 </div>
 <!-- MODAL ENDS HERE. -->
 
-<div class="blog-div">
-<?php
-$c=mysqli_connect('localhost','root','','survey');
-if($c){
-	$q="select * from `blog` order by blog_id desc";
-	$r=mysqli_query($c,$q); 
-	while($data=mysqli_fetch_array($r)){
-		echo "<div class='container'>";
-				echo "<div class='title'>";
-					echo  $data['title']."<br>";
-						echo "<div class ='container-fluid'>";
-							echo  "<div class='author'>"."-".$data['author']."</div>";
-							echo "<div class='date'>".$data['date_pub']."</div>";
-						echo "</div>";
-				echo "</div>";
-				echo "<div class='pic'>";
-					echo "<img src ='uploads/".$data['image']."'>";	
-				echo "</div>";
-		echo "</div>";
-# for printing the content
-				echo "<div class='section_content'>";
-					echo htmlspecialchars_decode(stripcslashes($data['content']));
-				echo "</div>";
-		echo "<br><br>"; 
-	}
-}
+            <iframe src="survey1.php" style=" height:1000px; width:100%; position: relative; border: none"></iframe>
 
-?>
-</div>
-<!-- jQuery -->
-<script src="src/js/jquery.js"></script>
+            <!-- jQuery -->
+            <script src="../../src/js/jquery.js"> </script>
+            <!--
+                Bootstrap Core JavaScript -->
+            <script src="../../src/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="src/js/bootstrap.min.js"></script>
+            <!-- Scrolling Nav JavaScript -->
+            <script src="../../src/js/jquery.easing.min.js"></script>
+            <script src="../../src/js/scrolling-nav.js"></script>
 
-<!-- Scrolling Nav JavaScript -->
-<script src="src/js/jquery.easing.min.js"></script>
-<script src="src/js/scrolling-nav.js"></script>
-</body>
-<footer>
+        </div>
+
+    </body>
+    <footer>
   <div class="container1">
       <div class="footer-box">
           <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
@@ -206,4 +182,5 @@ if($c){
             
   </div>
 </footer>
+
 </html>

@@ -1,8 +1,14 @@
 <?php
+session_start();
+ if (!isset($_SESSION['username'])) {
+    ?><script>alert('Please login to contribute.');
+    window.location='index.php';</script>
+    <?php
+  }
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "projectdb";
+$dbname = "survey";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) {
     die("failed" . mysqli_error());
