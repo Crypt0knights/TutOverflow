@@ -39,7 +39,7 @@ if (!$conn)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> 
-                <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
+                <a class="navbar-brand page-scroll" href="index.php">TutOverflow</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +47,7 @@ if (!$conn)
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden" style="color: aqua;">
-                        <a class="page-scroll" href="index.php"></a>
+                        <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="write.php">Write Blog</a>
