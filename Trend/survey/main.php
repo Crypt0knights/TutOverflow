@@ -3,7 +3,7 @@ session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
-$dbname = "projectdb";
+$dbname = "survey";
 $conn = mysqli_connect($server, $username, $password, $dbname);
 if (!$conn) 
 {
