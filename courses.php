@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -35,11 +36,13 @@ if(mysqli_num_rows($tasks)==0)
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
+    <link href="src/css/landing.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
     <title>TutOverflow-Find Courses</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -79,7 +82,11 @@ if(mysqli_num_rows($tasks)==0)
                         <a class="page-scroll" href="/TutOverflow/Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                    <button class="btn btn-info navbar-btn">Login/Signup</button>
+                    <?php if(!isset($_SESSION['username']))
+                    echo  "<a href='db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
+                    else
+                        echo "<a href='db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
+                ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

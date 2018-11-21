@@ -16,6 +16,7 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="src/css/landing.css" rel="stylesheet">
 </head>
 <body>
 
@@ -41,4 +42,17 @@
 </div>
 		
 </body>
+<footer>
+  <div class="container1">
+      <div class="footer-box">
+          <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-github"></i>
+          <i class="fa fa-behance"></i>
+      </div>
+            
+  </div>
+</footer>
 </html>

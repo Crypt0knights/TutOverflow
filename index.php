@@ -24,6 +24,7 @@ if (!$conn)
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
     <link href="src/css/landing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -223,5 +224,17 @@ if (!$conn)
 <script src="src/js/scrolling-nav.js"></script>
 
 </body>
-
+<footer>
+  <div class="container1">
+      <div class="footer-box">
+          <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-github"></i>
+          <i class="fa fa-behance"></i>
+      </div>
+            
+  </div>
+</footer>
 </html>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -19,8 +20,9 @@ if (!$conn)
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-
-        <title>TutOverflow</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="icon" href="/TutOverflow/favicon.ico">
+        <title>TutOverflow-Trend Analysis</title>
         <link href="../../src/css/bootstrap.min.css" rel="stylesheet">
         <link href="../../src/css/scrolling-nav.css" rel="stylesheet">
         <link href="../../src/css/landing.css" rel="stylesheet">
@@ -56,7 +58,11 @@ if (!$conn)
                                 <a class="page-scroll" href="main.php">Trend Analysis</a>
                             </li>
                             <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
-                            <button class="btn btn-info navbar-btn">Login/Signup</button>
+                            <?php if(!isset($_SESSION['username']))
+                    echo  "<a href='/TutOverflow/db.php'><button class='btn btn-info navbar-btn'>Login/Signup</button></a>";
+                    else
+                        echo "<a href='/TutOverflow/db.php?logout='1><button class='btn btn-info navbar-btn'>Logout</button></a>";
+                ?>
                         </ul>
 
                     </div>
@@ -163,5 +169,18 @@ if (!$conn)
         </div>
 
     </body>
+    <footer>
+  <div class="container1">
+      <div class="footer-box">
+          <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-github"></i>
+          <i class="fa fa-behance"></i>
+      </div>
+            
+  </div>
+</footer>
 
 </html>

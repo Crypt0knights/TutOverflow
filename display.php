@@ -19,11 +19,14 @@ if (!$conn)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>TutOverflow</title>
+    <link rel="icon" href="favicon.ico">
+    <title>TutOverflow-Blogs</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
     <link href="src/css/landing.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
@@ -35,8 +38,8 @@ if (!$conn)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.php">TutOverflow</a>
+                </button> 
+                <a class="navbar-brand page-scroll" href="#page-top">TutOverflow</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,11 +50,10 @@ if (!$conn)
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        
                         <a class="page-scroll" href="write.php">Write Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/TutOverflow/Trend/survey/main.php">Trend Analysis</a>
+                        <a class="page-scroll" href="Trend/survey/main.php">Trend Analysis</a>
                     </li>
                     <button class="btn btn-info navbar-btn" data-toggle="modal" data-target="#exampleModal">+ Add Tutorial</button>
                     <?php if(!isset($_SESSION['username']))
@@ -65,7 +67,8 @@ if (!$conn)
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav> 
+    </nav>
+
     <!-- MODAL BEGINS HERE -->
     <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
@@ -150,6 +153,7 @@ if (!$conn)
 </div>
 </div>
 <!-- MODAL ENDS HERE. -->
+
 <div class="blog-div">
 <?php
 $c=mysqli_connect('localhost','root','','survey');
@@ -179,5 +183,27 @@ if($c){
 
 ?>
 </div>
+<!-- jQuery -->
+<script src="src/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="src/js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="src/js/jquery.easing.min.js"></script>
+<script src="src/js/scrolling-nav.js"></script>
 </body>
+<footer>
+  <div class="container1">
+      <div class="footer-box">
+          <p style="text-align: center;">Copyright &copy; 2018 TutOverflow</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-github"></i>
+          <i class="fa fa-behance"></i>
+      </div>
+            
+  </div>
+</footer>
 </html>

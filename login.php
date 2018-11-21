@@ -6,12 +6,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Dosis|Kreon|Raleway" rel="stylesheet">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>TutOverflow</title>
+    <title>TutOverflow-Login</title>
+    <link href="src/css/landing.css" rel="stylesheet">
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
 </head>
@@ -72,5 +74,7 @@
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
+  
 </body>
+
 </html>

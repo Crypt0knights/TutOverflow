@@ -14,6 +14,7 @@
     <title>TutOverflow</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
     <link href="src/css/scrolling-nav.css" rel="stylesheet">
+    <link href="src/css/landing.css" rel="stylesheet">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
