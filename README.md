@@ -1,5 +1,12 @@
 # TutOverflow
+## Find the Best Rated Online Tutorials and Courses along with a personal blog & latest Industy Tech-Trend Analysis.
 
-* Do have a look at the Tasks Checklist in the Issues tab. 
-* Changes to be made firstly in **master branch**. When confirmed, will be pushed to the **gh-pages branch**.
+### Setup
+1. Clone the repository.
+2. Fire up xampp and add the `survey.sql` file to a database named `survey`.
+3. Navigate to `localhost/TutOverflow/index.php`.
 
+### Installing xampp
+* For Windows User: https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/xampp/
+* For Linux Users:  https://www.wikihow.com/Install-XAMPP-on-Linux
+* For Mac Users: https://www.webucator.com/how-to/how-install-start-test-xampp-on-mac-osx.cfm
