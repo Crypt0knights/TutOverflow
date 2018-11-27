@@ -1,7 +1,7 @@
 # TutOverflow
 ## Find the Best Rated Online Tutorials and Courses along with-
-* A Personal Blog
-* Industry Tech-Trend Analysis
+##### A Personal Blog
+##### Industry Tech-Trend Analysis
 
 ### Setup
 1. Clone the repository.
